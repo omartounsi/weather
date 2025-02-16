@@ -1,0 +1,114 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans');
+
+body{
+  background-image: url('/weather.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #FBF5DD;
+  font-family: 'general sans';
+  box-sizing: border-box;
+}
+
+.container{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.weather-card{
+  background-color: #dda85300;
+  border-radius: 5%;
+  border: 2px solid #16404D;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 50px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.weather-card:hover{
+  transform: scale(1.05);
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location h1, .location h2{
+  font-weight: 300;
+}
+
+.temperatures{
+  display: flex;
+  justify-content: center;
+}
+
+.temperatures p{
+  margin: 10px 15px;
+  font-size: 25px;
+}
+
+.container img{
+  height: 100px;
+
+}
+
+.icon{
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+}
+
+.input-container input{
+  height: 35px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'satoshi';
+  font-weight: 200;
+  color: rgb(238, 238, 238);
+  border: 1px solid gray;
+}
+
+button{
+  width: auto;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: rgba(67, 67, 67, 0);
+  font-size: 20px;
+  font-family: 'satoshi';
+  color: rgb(227, 226, 226);
+  font-weight: 200;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+}
+
+.input-container input::placeholder{
+  color: rgb(222, 222, 222);
+  font-family: 'satoshi';
+  font-family: 'satoshi';
+}
+
