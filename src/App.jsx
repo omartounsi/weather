@@ -36,8 +36,8 @@ function App() {
             <h2>{weather.location.country}</h2>
           </div>
           <div className="temperatures">
-            <p>{weather.current.temp_c}&deg;C</p>
-            <p>{weather.current.temp_f}&deg;F</p>
+            <p>{Math.floor(weather.current.temp_c)}&deg;C</p>
+            <p>{Math.floor(weather.current.temp_f)}&deg;F</p>
           </div>
           <p>Local Time: {(weather.location.localtime).slice(10, 16)}</p>
           <div className="icon">
